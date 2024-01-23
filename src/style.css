@@ -80,3 +80,31 @@ body {
 label {
   color: beige;
 }
+
+.loader {
+  width: 12em;
+  height: 1em;
+  border-radius: 8px;
+  background-color: #ff564744;
+}
+
+.loader div {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background-color: #ff6947;
+  animation: width7435 11s linear infinite;
+  transition: all;
+}
+
+@keyframes width7435 {
+  from {
+    /*width: 0;*/
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
