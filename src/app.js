@@ -47,7 +47,7 @@ window.addEventListener("load", function() {
     if (!carta) {
       carta = document.createElement("div");
       carta.id = "carta";
-      document.body.appendChild(carta); // Añadir 'carta' al cuerpo del documento
+      document.body.appendChild(carta);
     }
 
     // Width and heigth user input
@@ -59,6 +59,8 @@ window.addEventListener("load", function() {
       alert("Por favor, ingrese valores numéricos para width y height.");
       return;
     }
+
+    // if (widthInput <= )
 
     // + PX to card
     carta.style.width = widthInput + "px";
